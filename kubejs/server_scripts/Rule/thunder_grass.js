@@ -1,4 +1,4 @@
-
+//收获雷霆草的概率掉落脚本
 BlockEvents.drops('kubejs:thunder_grass', event => {
     const age = event.block.getProperties().get('age')
     if (String(age) !== '5') return

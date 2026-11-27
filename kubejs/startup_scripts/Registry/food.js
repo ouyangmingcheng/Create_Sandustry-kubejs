@@ -1,4 +1,4 @@
-
+//食物注册（森罗物语食物注册器）
 const $FoodBuilder = Java.loadClass(
     'dev.latvian.mods.kubejs.item.FoodBuilder'
 )

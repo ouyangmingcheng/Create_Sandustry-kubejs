@@ -1,4 +1,6 @@
+//数值平衡调整
 ItemEvents.modification(event => {
+  //基础工具数值
   event.modify('minecraft:wooden_sword', item => {
     item.setMaxDamage(5)
     item.setAttackDamage(0)
@@ -86,5 +88,16 @@ ItemEvents.modification(event => {
     event.modify('createdieselgenerators:hammer', item => {
     item.setMaxDamage(128)
     item.setAttackDamage(2)
+  })
+  //砂纸耐久
+  event.modify('kubejs:iron_sandpaper', item => {
+    item.maxDamage = 128
+  })
+  event.modify('kubejs:golden_sandpaper', item => {
+    item.maxDamage = 1
+  })
+  //黄金锅铲耐久
+  event.modify('kubejs:golden_kitchen_shovel', item => {
+    item.maxDamage = 128
   })
 })

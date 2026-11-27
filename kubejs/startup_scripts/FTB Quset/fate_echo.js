@@ -12,10 +12,6 @@ function fateEchoIsToilet(level, pos) {
         'poopsky:portable_toilet'
 }
 
-function fateEchoNotRecorded(reason) {
-    console.info('[宿命的回响] 本次未记录：' + reason)
-}
-
 function fateEchoFindLevel(server, dimension) {
     // KubeJS 为 getLevel 额外暴露 ResourceLocation 重载；ResourceKey 参数会发生歧义。
     // 遍历已加载的服务端维度，避免调用这个重载方法。
@@ -41,38 +37,36 @@ function fateEchoCheckDrink(event) {
 
     if (player.getPersistentData().getCompound('PlayerPersisted')
         .getBoolean('kubejs_fate_echo_complete')) {
-        console.info('[宿命的回响] 已有任务达成记录，等待 FTB 任务检测。')
         return
     }
 
     // 饮用之前，当前出生点必须已经设在一个有效的移动厕所上。
     const server = player.getServer()
     const respawnPos = player.getRespawnPosition()
-    if (!server || !respawnPos) return fateEchoNotRecorded('没有可用的个人出生点')
+    if (!server || !respawnPos) return
 
     const targetPos = respawnPos.immutable()
     const targetDimension = String(player.getRespawnDimension())
     const targetLevel = fateEchoFindLevel(server, targetDimension)
-    if (!targetLevel) return fateEchoNotRecorded('出生点维度不可用')
+    if (!targetLevel) return
     if (!fateEchoIsToilet(targetLevel, targetPos)) {
-        return fateEchoNotRecorded('当前出生点方块不是移动厕所')
+        return
     }
 
     // 饮用事件位于物品消耗之前；以使用统计增长确认真的喝完，防止取消饮用误判。
     // 返程交由原模组处理，任务不额外要求离开厕所或在某个 tick 到达固定坐标。
     const drinkItem = stack.getItem()
     const usedBefore = player.stats.getItemsUsed(drinkItem)
-    console.info('[宿命的回响] 已确认移动厕所出生点，下一 tick 核验是否喝完。')
 
     server.scheduleInTicks(1, () => {
         try {
             if (player.isRemoved() || !player.isAlive()) {
-                return fateEchoNotRecorded('玩家已死亡或离开')
+                return
             }
 
             // 其他监听器可能取消饮用；实际饮用统计必须增长，不能只靠右键尝试。
             if (player.stats.getItemsUsed(drinkItem) <= usedBefore) {
-                return fateEchoNotRecorded('饮用统计没有增长，未确认实际喝完')
+                return
             }
 
             // PlayerPersisted 随玩家存档保存，并在死亡重建玩家时保留。
@@ -81,18 +75,17 @@ function fateEchoCheckDrink(event) {
             let persisted = data.getCompound('PlayerPersisted')
             persisted.putBoolean('kubejs_fate_echo_complete', true)
             data.put('PlayerPersisted', persisted)
-            console.info('[宿命的回响] 已确认移动厕所出生点且喝完长岛冰茶，等待任务检测。')
         } catch (error) {
-            console.error('[宿命的回响] 饮用完成核验失败：' + error)
+            // 跳过本次核验，避免异常影响玩家 tick。
         }
     })
 }
 
 NativeEvents.onEvent($FateEchoDrinkFinished, event => {
-    // 可选任务发生脚本错误时应保留日志，不能让异常冒泡到玩家 tick 导致崩溃。
+    // 可选任务的异常不应冒泡到玩家 tick。
     try {
         fateEchoCheckDrink(event)
     } catch (error) {
-        console.error('[宿命的回响] 饮用检测失败：' + error)
+        // 跳过本次检测。
     }
 })

@@ -1,3 +1,4 @@
+//作物注册
 StartupEvents.registry('block', event => {
     const thunderGrass = event.create('thunder_grass', 'kubejs:crop')
         .age(5, shape => shape.wheat())

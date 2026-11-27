@@ -1,4 +1,4 @@
-
+//森罗汤底注册
 StartupEvents.postInit(() => {
     const SoupBaseManager = Java.loadClass(
         'com.github.ysbbbbbb.kaleidoscopecookery.crafting.soupbase.SoupBaseManager'

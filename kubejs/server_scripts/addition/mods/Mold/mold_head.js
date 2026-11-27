@@ -1,3 +1,5 @@
+//基础工具铸模配方脚本
+
 const PRESS_TOOL_MOLDS = [
     {
         mold: 'sword',

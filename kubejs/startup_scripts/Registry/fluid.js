@@ -1,4 +1,4 @@
-
+//流体注册
 StartupEvents.registry('fluid', event => {
     event.create('molten_gold', 'thick')
         .type(type => {
