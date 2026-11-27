@@ -1,0 +1,340 @@
+{
+  "entity.minecraft.villager.jackseconomy.shopkeeper": "店主",
+
+  "itemGroup.jackseconomy": "Jack的经济（分支版）",
+
+  "block.jackseconomy.admin_shop": "管理员商店",
+
+  "block.jackseconomy.exporter": "出口器",
+  "block.jackseconomy.importer": "进口器",
+  "block.jackseconomy.fluid_exporter": "流体出口器",
+  "block.jackseconomy.fluid_importer": "流体进口器",
+  "block.jackseconomy.mechanical_exporter": "动力出口器",
+  "block.jackseconomy.mechanical_importer": "动力进口器",
+  "block.jackseconomy.mechanical_fluid_exporter": "动力流体出口器",
+  "block.jackseconomy.mechanical_fluid_importer": "动力流体进口器",
+  "block.jackseconomy.currency_converter": "货币转换器",
+
+  "block.jackseconomy.penny_stack": "沙币堆",
+  "block.jackseconomy.nickel_stack": "铜币堆",
+  "block.jackseconomy.dime_stack": "铁币堆",
+  "block.jackseconomy.quarter_stack": "锌币堆",
+  "block.jackseconomy.dollar_bill_stack": "金币堆",
+  "block.jackseconomy.five_dollar_bill_stack": "黄铜币堆",
+  "block.jackseconomy.ten_dollar_bill_stack": "黑曜石币堆",
+  "block.jackseconomy.twenty_dollar_bill_stack": "钻石币堆",
+  "block.jackseconomy.fifty_dollar_bill_stack": "绿宝石币堆",
+  "block.jackseconomy.hundred_dollar_bill_stack": "下界合金币堆",
+  "block.jackseconomy.thousand_dollar_bill_stack": "彩虹币堆",
+
+  "item.jackseconomy.penny": "沙币",
+  "item.jackseconomy.nickel": "铜币",
+  "item.jackseconomy.dime": "铁币",
+  "item.jackseconomy.quarter": "锌币",
+  "item.jackseconomy.dollar_bill": "金币",
+  "item.jackseconomy.five_dollar_bill": "黄铜币",
+  "item.jackseconomy.ten_dollar_bill": "黑曜石币",
+  "item.jackseconomy.twenty_dollar_bill": "钻石币",
+  "item.jackseconomy.fifty_dollar_bill": "绿宝石币",
+  "item.jackseconomy.hundred_dollar_bill": "下界合金币",
+  "item.jackseconomy.thousand_dollar_bill": "彩虹币",
+  "item.jackseconomy.check": "支票",
+
+  "item.jackseconomy.wallet": "钱包",
+  "item.jackseconomy.golden_wallet": "金钱包",
+  "item.jackseconomy.basic_wallet": "基础钱包",
+  "item.jackseconomy.intermediate_wallet": "中级钱包",
+  "item.jackseconomy.advanced_wallet": "高级钱包",
+  "item.jackseconomy.the_phat_wallet": "土豪钱包",
+  "item.jackseconomy.infinite_wallet": "无限钱包",
+
+  "item.jackseconomy.exporter_manifest": "出口清单",
+  "item.jackseconomy.importer_manifest": "进口清单",
+  "item.jackseconomy.fluid_exporter_manifest": "流体出口清单",
+  "item.jackseconomy.fluid_importer_manifest": "流体进口清单",
+
+  "item.jackseconomy.golden_exporter_manifest": "黄金出口清单",
+  "item.jackseconomy.golden_fluid_exporter_manifest": "黄金流体出口清单",
+
+  "item.jackseconomy.empty_exporter_manifest": "空白出口清单",
+  "item.jackseconomy.empty_importer_manifest": "空白进口清单",
+  "item.jackseconomy.empty_fluid_exporter_manifest": "空白流体出口清单",
+  "item.jackseconomy.empty_fluid_importer_manifest": "空白流体进口清单",
+
+  "curios.identifier.wallet": "钱包",
+
+  "key.categories.jackseconomy": "Jack的经济（分支版）",
+  "key.jackseconomy.open_wallet": "打开钱包",
+
+  "jackseconomy.ponder.exporting.header": "出口物品",
+  "jackseconomy.ponder.exporting.text_1": "出口器可用于自动化出售物品的过程。",
+  "jackseconomy.ponder.exporting.text_2": "出口器需要清单才能工作，没有清单它们毫无用处。",
+  "jackseconomy.ponder.exporting.text_3": "出口器出售物品需要一些时间，所以请确保你有足够的出口器以避免溢出。",
+
+  "jackseconomy.ponder.importing.header": "进口物品",
+  "jackseconomy.ponder.importing.text_1": "进口器可用于自动化购买物品的过程。",
+  "jackseconomy.ponder.importing.text_2": "进口器需要清单才能工作，没有清单它们毫无用处。",
+  "jackseconomy.ponder.importing.text_3": "进口器购买物品需要一些时间，所以请确保你有足够的进口器来满足你的需求。",
+
+  "jackseconomy.ponder.fluid_exporting.header": "出口流体",
+  "jackseconomy.ponder.fluid_exporting.text_1": "流体出口器可用于自动化出售流体的过程。",
+  "jackseconomy.ponder.fluid_exporting.text_2": "流体出口器需要清单才能工作，没有清单它们毫无用处。",
+  "jackseconomy.ponder.fluid_exporting.text_3": "流体出口器出售流体需要一些时间，所以请确保你有足够的流体出口器以避免溢出。",
+
+  "jackseconomy.ponder.fluid_importing.header": "进口流体",
+  "jackseconomy.ponder.fluid_importing.text_1": "流体进口器可用于自动化购买流体的过程。",
+  "jackseconomy.ponder.fluid_importing.text_2": "流体进口器需要清单才能工作，没有清单它们毫无用处。",
+  "jackseconomy.ponder.fluid_importing.text_3": "流体进口器购买流体需要一些时间，所以请确保你有足够的流体进口器来满足你的需求。",
+
+  "jackseconomy.ponder.converting_currency.header": "转换货币",
+  "jackseconomy.ponder.converting_currency.text_1": "货币转换器可用于将货币转换为其他形式，例如将1美元纸币转换为10美元纸币。",
+  "jackseconomy.ponder.converting_currency.text_2": "与其他机器不同，货币转换器不消耗能量。",
+  "jackseconomy.ponder.converting_currency.text_3": "它们即时转换货币，所以无需等待。",
+
+  "jackseconomy.click_to_select": "点击选择！",
+  "jackseconomy.none_selected": "未选择",
+  "jackseconomy.selected": "已选择",
+
+  "jackseconomy.search": "搜索...",
+
+  "jackseconomy.price_each": "每个 %s",
+  "jackseconomy.price_for": "%s 换 %s 个物品",
+
+  "jackseconomy.sell_price": "出售价格（%s）：%s",
+  "jackseconomy.buy_price": "购买价格（%s）：%s",
+
+  "jackseconomy.importer_price": "进口价格：每个 %s",
+  "jackseconomy.exporter_price": "出口价格：每个 %s",
+
+  "jackseconomy.fluid_sell_price": "流体出售价格（%s）：%s",
+  "jackseconomy.fluid_buy_price": "流体购买价格（%s）：%s",
+
+  "jackseconomy.fluid_importer_price": "流体进口价格：每mB %s",
+  "jackseconomy.fluid_exporter_price": "流体出口价格：每mB %s",
+
+  "jackseconomy.ticket_process_count" : "允许处理最多 %s 个物品",
+  "jackseconomy.fluid_ticket_process_count": "允许处理最多 %smB 流体",
+  "jackseconomy.ticket_uses_left" : "剩余 %s 次使用！",
+
+  "jackseconomy.set_ticket_process_count": "将最大处理数量设置为 %s",
+  "jackseconomy.get_ticket_process_count": "此清单的最大处理数量为 %s",
+  "jackseconomy.remove_ticket_max_usage": "此清单现在可以无限次使用",
+  "jackseconomy.set_ticket_max_usage": "此清单现在总共可以使用 %s 次",
+  "jackseconomy.get_ticket_max_usage": "此清单总共可以使用 %s 次",
+
+  "jackseconomy.reset_admin_shop_color": "重置名称为 %s 的管理员商店的颜色",
+  "jackseconomy.set_admin_shop_color": "将名称为 %s 的管理员商店的颜色设置为 %s",
+  "jackseconomy.reset_default_admin_shop_color": "重置管理员商店的默认颜色",
+  "jackseconomy.set_default_admin_shop_color": "将管理员商店的默认颜色设置为 %s",
+  "jackseconomy.failed_to_parse_color": "解析颜色失败！",
+
+  "jackseconomy.reset_admin_shop_name": "重置管理员商店名称",
+  "jackseconomy.set_admin_shop_name": "将管理员商店名称设置为 %s",
+
+  "jackseconomy.lalt": "[左-ALT]",
+
+  "jackseconomy.view_prices": "%s 查看价格",
+
+  "jackseconomy.redstone_ignored": "红石：忽略",
+  "jackseconomy.redstone_signal_on": "红石：信号开启",
+  "jackseconomy.redstone_signal_off": "红石：信号关闭",
+
+  "jackseconomy.currency": "货币：%.1f",
+  "jackseconomy.wallet": "钱包",
+  "jackseconomy.no_wallet": "没有钱包！",
+
+  "jackseconomy.turn_into_check": "点击将指定余额转换为支票！",
+
+  "jackseconomy.click_to_withdraw": "点击取出！",
+
+  "jackseconomy.shift_coins": "Shift点击：64个物品",
+  "jackseconomy.ctrl_coins": "Ctrl点击：10个物品",
+  "jackseconomy.normal_coins": "普通点击：1个物品",
+
+  "jackseconomy.infinite_money": "无限金钱",
+  "jackseconomy.infinite": "无限",
+  "jackseconomy.balance": "余额：%s",
+  "jackseconomy.value": "价值：%s",
+  "jackseconomy.wallet_balance": "钱包：%s",
+  "jackseconomy.balance_out_of": "余额：%s/%s",
+  "jackseconomy.items": "物品：%s",
+
+  "jackseconomy.fe_per_tick": "消耗：%s FE/刻",
+  "jackseconomy.progress_per_tick": "速度：%s 进度/刻",
+
+  "jackseconomy.subtitle.coin": "硬币音效",
+  "jackseconomy.subtitle.cash": "现金音效",
+  "jackseconomy.subtitle.checkout": "结账音效",
+
+  "jackseconomy.in_cart": "购物车中：%s",
+  "jackseconomy.to_sell": "待出售：%s",
+
+  "jackseconomy.purchase": "购买",
+
+  "jackseconomy.cant_afford": "买不起！",
+  "jackseconomy.shopping_cart_empty": "购物车是空的！",
+  "jackseconomy.sell_all": "Shift点击出售全部",
+
+  "jackseconomy.sold_items": "已出售物品：%s",
+  "jackseconomy.bought_items": "已购买物品：%s",
+  "jackseconomy.total": "总计：%s",
+
+  "jackseconomy.hold_an_item": "你需要手持一个物品！",
+  "jackseconomy.hold_an_item_with_fluid_content": "你需要手持一个装有流体的物品！",
+  "jackseconomy.hold_a_manifest": "你需要手持一个清单！",
+  "jackseconomy.hold_an_admin_shop": "你需要手持一个管理员商店！",
+
+  "jackseconomy.importer_price_set": "%s 的进口购买价格已设置为 %s！",
+  "jackseconomy.exporter_price_set": "%s 的出口出售价格已设置为 %s！",
+
+  "jackseconomy.fluid_importer_price_set": "%s 的流体进口购买价格已设置为 %s！",
+  "jackseconomy.fluid_exporter_price_set": "%s 的流体出口出售价格已设置为 %s！",
+
+  "jackseconomy.importer_price_removed": "%s 的进口购买价格已移除！",
+  "jackseconomy.exporter_price_removed": "%s 的出口出售价格已移除！",
+
+  "jackseconomy.fluid_importer_price_removed": "%s 的流体进口购买价格已移除！",
+  "jackseconomy.fluid_exporter_price_removed": "%s 的流体出口出售价格已移除！",
+
+  "jackseconomy.generate_this_ticket": "你可以使用以下命令生成此清单：",
+
+  "jackseconomy.copy": "[复制]",
+  "jackseconomy.click_to_copy": "点击此处复制命令！",
+
+  "jackseconomy.config.hide_price_tooltips": "隐藏价格提示：%s",
+  "jackseconomy.config.alternative_tooltip_format": "替代提示格式：%s",
+
+  "jackseconomy.config.wallet_hud_position_right": "钱包HUD位置靠右：%s",
+  "jackseconomy.config.wallet_hud_position_y_offset": "钱包HUD位置Y偏移：%s",
+
+  "jackseconomy.true": "true",
+  "jackseconomy.false": "false",
+
+  "jackseconomy.golden_exporter_manifest_description": "允许在出口器中出售任何可出售的物品",
+  "jackseconomy.golden_fluid_exporter_manifest_description": "允许在流体出口器中出售任何可出售的流体",
+
+  "jackseconomy.edit": "编辑",
+
+  "jackseconomy.right_click_to_change": "右键点击更改",
+  "jackseconomy.right_click_to_edit_price": "右键点击编辑价格",
+  "jackseconomy.shift_left_click_to_edit_count": "左-Shift + 左键点击编辑数量",
+  "jackseconomy.middle_click_to_remove": "中键点击移除物品",
+  "jackseconomy.middle_click_to_reset": "中键点击重置",
+  "jackseconomy.middle_click_to_cancel": "中键点击取消",
+
+  "jackseconomy.no_price": "未设置价格",
+
+  "jackseconomy.right_click_to_rename": "右键点击重命名",
+  "jackseconomy.middle_click_to_remove_category": "中键点击移除分类",
+
+  "jackseconomy.click_to_open_admin_shop": "点击打开管理员商店！",
+
+  "jackseconomy.shift_right_click_to_rename": "左-Shift + 右键点击重命名",
+
+  "jackseconomy.manifest_required": "交易需要清单",
+
+  "jackseconomy.leave": "离开",
+  "jackseconomy.stay": "留下",
+
+  "jackseconomy.admin_shop_exit_prompt": "你确定要退出商店吗？你当前的购物车将丢失。",
+
+  "jackseconomy.configuration": "配置",
+
+  "jackseconomy.direction.north": "北（正面）",
+  "jackseconomy.direction.south": "南（背面）",
+  "jackseconomy.direction.east": "东（左侧）",
+  "jackseconomy.direction.west": "西（右侧）",
+  "jackseconomy.direction.up": "上",
+  "jackseconomy.direction.down": "下",
+
+  "jackseconomy.sidevalue.input": "输入",
+  "jackseconomy.sidevalue.output": "输出",
+  "jackseconomy.sidevalue.rejection_output": "拒绝输出",
+  "jackseconomy.sidevalue.none": "无",
+
+  "jackseconomy.max_storage": "最大存储：%s（已使用 %s）",
+
+  "jackseconomy.speed": "速度：%s RPM",
+
+  "jackseconomy.category_list": "商店分类",
+  "jackseconomy.drop_item_to_create_category": "拖入物品以创建分类！",
+  "jackseconomy.add_category": "添加分类！",
+
+  "jackseconomy.max_capacity_reached": "已达到最大容量",
+  "jackseconomy.capacity_overflow_reached": "已达到容量溢出",
+
+  "jackseconomy.write_check": "写入支票",
+  "jackseconomy.write": "写入",
+
+  "jackseconomy.deposit_all": "全部存入",
+
+  "jackseconomy.shop": "商店",
+
+  "jackseconomy.item_owner": "%s的%s",
+
+  "jackseconomy.thanks_for_using": "感谢使用Jack的经济（分支版）！",
+
+  "jackseconomy.no_sell_price": "无出售价格",
+  "jackseconomy.middle_click_to_remove_sell_price": "中键点击移除出售价格",
+
+  "jackseconomy.locked": "已锁定",
+  "jackseconomy.required_game_stage": "所需游戏阶段：%s",
+  "jackseconomy.locked_behind_stage": "锁定于游戏阶段之后：%s",
+
+  "jackseconomy.selling": "出售中",
+  "jackseconomy.buying": "购买中",
+
+  "jackseconomy.sell": "出售",
+  "jackseconomy.purchase_and_sell": "购买与出售",
+
+  "jackseconomy.selling_locked": "出售已锁定",
+  "jackseconomy.selling_locked_behind_gamestage": "出售锁定于游戏阶段之后：%s",
+
+  "jackseconomy.lctrl_right_click_to_change_stage": "左-CTRL + 右键点击更改解锁阶段",
+  "jackseconomy.shift_right_click_to_edit_stage": "左-Shift + 右键点击编辑所需阶段",
+  "jackseconomy.shift_middle_click_to_remove_stage": "左-Shift + 中键点击移除所需阶段",
+
+  "jackseconomy.item_disabled": "已禁用",
+
+  "jackseconomy.admin_shop_name": "商店名称：%s",
+
+  "jackseconomy.admin_shop_saved": "管理员商店已保存！",
+  "jackseconomy.prices_reloaded": "已从文件重新加载价格！",
+  "jackseconomy.reset_all_data": "已重置所有数据！",
+  "jackseconomy.reset_color_data": "已重置管理员商店颜色数据！",
+  "jackseconomy.reset_prices_data": "已重置价格数据！",
+  "jackseconomy.reset_purchase_data": "已重置购买数据！",
+
+  "jackseconomy.default": "默认",
+
+  "jackseconomy.bulk_deselect": "左键点击取消选择",
+  "jackseconomy.bulk_select": "左键点击选择",
+  "jackseconomy.bulk_add_to_selection": "右键点击添加到选择",
+  "jackseconomy.bulk_reset_selection": "中键点击重置选择",
+
+  "jackseconomy.bulk_set_buy_price": "左-CTRL + 右键点击编辑购买价格",
+  "jackseconomy.bulk_set_buy_stage": "左-CTRL + 左-Shift + 右键点击编辑购买阶段",
+  "jackseconomy.bulk_set_sell_price": "右键点击编辑出售价格",
+  "jackseconomy.bulk_set_sell_stage": "左-Shift + 右键点击编辑出售阶段",
+  "jackseconomy.bulk_remove_buy_price": "左-CTRL + 中键点击移除购买价格",
+  "jackseconomy.bulk_remove_buy_stage": "左-CTRL + 左-Shift + 中键点击移除购买阶段",
+  "jackseconomy.bulk_remove_sell_price": "中键点击移除出售价格",
+  "jackseconomy.bulk_remove_sell_stage": "左-Shift + 中键点击移除出售阶段",
+
+  "jackseconomy.bulk_admin_shop_not_creative": "你必须处于创造模式才能编辑管理员商店！",
+
+  "jackseconomy.player_no_wallet": "玩家 %s 没有装备钱包！",
+  "jackseconomy.player_give_money": "给了 %s 给予 %s。",
+  "jackseconomy.player_remove_money": "从 %s 拿走了 %s。",
+  "jackseconomy.player_cleared_money": "从 %s 拿走了全部 %s。",
+  "jackseconomy.player_count_money": "%s 有 %s",
+
+  "jackseconomy.jei_placeholder_manifest_required": "需要清单！",
+  "jackseconomy.jei_placeholder_wallet_required": "需要钱包！",
+
+  "ftbquests.reward.jackseconomy.money": "金钱",
+  "ftbquests.reward.jackseconomy.money.amount": "数量",
+
+  "ftbquests.task.jackseconomy.money": "金钱",
+  "ftbquests.task.jackseconomy.money.amount": "数量"
+}

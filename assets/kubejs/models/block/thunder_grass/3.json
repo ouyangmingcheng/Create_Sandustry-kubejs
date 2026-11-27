@@ -1,0 +1,6 @@
+{
+  "parent": "kubejs:block/thunder_grass_cross",
+  "textures": {
+    "cross": "kubejs:block/thunder_grass3"
+  }
+}

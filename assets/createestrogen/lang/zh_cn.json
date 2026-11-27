@@ -1,0 +1,19 @@
+{
+  "block.createestrogen.centrifuge": "离心机",
+  "block.createestrogen.centrifuge.tooltip": "此机器仅接受来自_底部_的_输入_，并从_顶部_进行_输出_。",
+  "block.createestrogen.moth_seat": "玫瑰枫蛾座椅",
+  "create.tooltip.speedRequirement.max": "最大",
+  "createestrogen.ponder.basic.header": "如何使用离心机",
+  "createestrogen.ponder.basic.text_1": "离心机没有任何内部存储空间，你需要在其周围放置流体容器才能使其工作！",
+  "createestrogen.ponder.basic.text_2": "你可以从底部输入流体",
+  "createestrogen.ponder.basic.text_3": "并从顶部输出流体",
+  "createestrogen.ponder.intro.header": "离心机的要求",
+  "createestrogen.ponder.intro.text_1": "离心机需要最大速度（256 RPM）才能工作！",
+  "createestrogen.recipe.centrifuging": "离心",
+  "emi.category.createestrogen.centrifuging": "离心",
+  "item.createestrogen.incomplete_estrogen_patches": "未完成的雌激素贴片",
+  "item.createestrogen.incomplete_uwu": "未完成的UwU",
+  "item.createestrogen.package": "雌激素药丸包装",
+  "item.createestrogen.used_filter": "用过的过滤器",
+  "itemGroup.createestrogen.createestrogen": "机械动力：雌激素"
+}

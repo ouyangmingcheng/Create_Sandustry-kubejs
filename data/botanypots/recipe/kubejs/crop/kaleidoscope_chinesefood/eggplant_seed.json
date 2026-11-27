@@ -1,0 +1,36 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "kaleidoscope_chinesefood:eggplant_crop"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "kaleidoscope_chinesefood:eggplant_crop",
+  "input": {
+    "item": "kaleidoscope_chinesefood:eggplant_seed"
+  },
+  "drops": [
+    {
+      "type": "botanypots:items",
+      "items": [
+        {
+          "result": {
+            "id": "kaleidoscope_chinesefood:eggplant",
+            "count": 1
+          },
+          "chance": 1.0
+        },
+        {
+          "result": {
+            "id": "kaleidoscope_chinesefood:eggplant_seed",
+            "count": 1
+          },
+          "chance": 1.0
+        }
+      ]
+    }
+  ]
+}

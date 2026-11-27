@@ -1,0 +1,25 @@
+
+{
+  "criteria": {
+    "put_poop_on_board": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "poopsky:poop"
+    },
+    "title": "这菜板不能要了",
+    "description": "把屎放到菜板上",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "requirements": [
+    [
+      "put_poop_on_board"
+    ]
+  ],
+  "rewards": {}
+}

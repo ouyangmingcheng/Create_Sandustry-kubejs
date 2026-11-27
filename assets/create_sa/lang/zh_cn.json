@@ -1,0 +1,15 @@
+{
+  "enchantment.create_sa.above_the_clouds": "腾云驾雾",
+  "enchantment.create_sa.above_the_clouds.desc": "允许喷气背包突破最大飞行高度限制，持续向上飞行。",
+  "enchantment.create_sa.chunk_eater": "区块吞噬者",
+  "enchantment.create_sa.chunk_eater.desc": "连锁破坏与目标方块相连的同种方块；等级越高，连锁范围越大，并消耗水与熔岩。",
+  "enchantment.create_sa.digging": "挖掘",
+  "enchantment.create_sa.digging.desc": "使用便携钻头时额外破坏与打击面垂直的 3×3 区域，并消耗水与熔岩。",
+  "enchantment.create_sa.gravity_gun": "重力枪",
+  "enchantment.create_sa.gravity_gun.desc": "使方块抓取器能够牵引、移动和抛掷生物、TNT 与箭矢；疾跑时推力更强。",
+  "enchantment.create_sa.hellfire": "地狱火",
+  "enchantment.create_sa.hellfire.desc": "强化火焰喷射器：提高直接伤害与点燃时间，并可使用灵魂火，但消耗更多熔岩。",
+  "enchantment.create_sa.impact": "动量冲击",
+  "enchantment.create_sa.impact.desc": "将抓钩释放时的动量转化为周围实体的范围伤害；等级越高伤害越高。",
+  "item.create_sa:netherite_exoskeleton_chestplate": "下界合金外骨骼盔甲"
+}

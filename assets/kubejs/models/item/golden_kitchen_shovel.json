@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "kubejs:item/golden_kitchen_shovel"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "createaddition:charging",
+  "energy": 1000000,
+  "ingredients": [
+    {
+      "type": "neoforge:difference",
+      "base": {
+        "tag": "c:seeds"
+      },
+      "subtracted": {
+        "item": "kubejs:thunder_grass_seeds"
+      }
+    }
+  ],
+  "max_charge_rate": 360,
+  "results": [
+    {
+      "id": "kubejs:thunder_grass_seeds",
+      "count": 1
+    }
+  ]
+}

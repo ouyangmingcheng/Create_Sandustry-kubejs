@@ -1,0 +1,15 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:block_exists",
+      "values": [
+        "kaleidoscope_cookery:tea_tree"
+      ]
+    }
+  ],
+  "type": "botanypots:block_derived_crop",
+  "block": "kaleidoscope_cookery:tea_tree",
+  "input": {
+    "item": "kaleidoscope_cookery:tea_seed"
+  }
+}

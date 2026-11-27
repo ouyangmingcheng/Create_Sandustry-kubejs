@@ -1,0 +1,13 @@
+{
+  "balancedflight.ponder.tag.flight_anchor": "飞行锚",
+  "balancedflight.ponder.flight_anchor.header": "用旋转力实现的动力飞行",
+  "balancedflight.configuration.Settings": "平衡飞行设置",
+  "balancedflight.configuration.Flight Options": "飞行选项",
+  "balancedflight.configuration.Balancing Config": "平衡性设置",
+  "balancedflight.configuration.Ascended Ring Gives Unlimited Creative Flight (will fall back to Basic tier inside range)": "升华飞行戒指提供无限制的创造模式飞行（范围内回退至基础飞行）",
+  "balancedflight.configuration.Flight Anchor Gives Creative Flight": "飞行锚提供创造模式飞行",
+  "balancedflight.configuration.Anchor Distance Multiplier (0d -> 10d, default 1d)": "飞行锚范围倍率（0～10，默认 1）",
+  "balancedflight.configuration.Anchor stress impact": "飞行锚应力消耗",
+  "balancedflight.configuration.Disable Fall Damage When Wearing Ascended Ring": "佩戴升华飞行戒指时免疫摔落伤害",
+  "balancedflight.configuration.Disable Fall Damage Near Flight Anchor": "在飞行锚范围内免疫摔落伤害"
+}

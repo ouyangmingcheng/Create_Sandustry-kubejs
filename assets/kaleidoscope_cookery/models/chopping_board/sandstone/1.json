@@ -1,0 +1,37 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "minecraft:block/sandstone",
+		"1": "minecraft:block/sandstone_bottom",
+		"2": "minecraft:block/sandstone_top"
+	},
+	"elements": [
+		{
+			"from": [5.5, 0, 5],
+			"to": [6.5, 6, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [5.5, 0, 5]},
+			"faces": {
+				"north": {"uv": [13.33333, 0, 16, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 2.66667, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 2.66667, 16], "texture": "#2"},
+				"down": {"uv": [0, 0, 2.66667, 16], "texture": "#1"}
+			}
+		},
+		{
+			"from": [7, 0, 5],
+			"to": [12, 6, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6, 0, 5]},
+			"faces": {
+				"north": {"uv": [0, 0, 13.33333, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"south": {"uv": [2.66667, 0, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"up": {"uv": [2.66667, 0, 16, 16], "texture": "#2"},
+				"down": {"uv": [2.66667, 0, 16, 16], "texture": "#1"}
+			}
+		}
+	]
+}
