@@ -1,0 +1,11 @@
+# 只跟踪整合包使用的 KubeJS 目录和项目文件。
+/*
+!/.gitignore
+!/README.txt
+!/package.json
+!/assets/
+!/client_scripts/
+!/config/
+!/data/
+!/server_scripts/
+!/startup_scripts/
