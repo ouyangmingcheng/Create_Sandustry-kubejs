@@ -14,14 +14,14 @@ ServerEvents.recipes(event =>{
         ],
         'create_biotech:empty_large_cardboard_box',
         [
-            C.deploying('kubejs:incomplete_cardboard_box',['kubejs:incomplete_cardboard_box','minecraft:red_dye']),
-            C.deploying('kubejs:incomplete_cardboard_box',['kubejs:incomplete_cardboard_box','minecraft:black_dye']),
-            C.deploying('kubejs:incomplete_cardboard_box',['kubejs:incomplete_cardboard_box','minecraft:string'])
+            C.deploying('csd:incomplete_cardboard_box',['csd:incomplete_cardboard_box','minecraft:red_dye']),
+            C.deploying('csd:incomplete_cardboard_box',['csd:incomplete_cardboard_box','minecraft:black_dye']),
+            C.deploying('csd:incomplete_cardboard_box',['csd:incomplete_cardboard_box','minecraft:string'])
         ]
     )
-    .transitionalItem('kubejs:incomplete_cardboard_box')
+    .transitionalItem('csd:incomplete_cardboard_box')
     .loops(8)
-    .id('kubejs:spider_deploying')
+    .id('csd:spider_deploying')
     //苦力怕
     C.sequenced_assembly(
         [
@@ -31,15 +31,15 @@ ServerEvents.recipes(event =>{
         ],
         'create_biotech:empty_large_cardboard_box',
         [
-            C.deploying('kubejs:incomplete_cardboard_box',['kubejs:incomplete_cardboard_box','minecraft:lime_dye']),
-            C.deploying('kubejs:incomplete_cardboard_box',['kubejs:incomplete_cardboard_box','minecraft:gunpowder']),
-            C.deploying('kubejs:incomplete_cardboard_box',['kubejs:incomplete_cardboard_box','minecraft:flint'])
+            C.deploying('csd:incomplete_cardboard_box',['csd:incomplete_cardboard_box','minecraft:lime_dye']),
+            C.deploying('csd:incomplete_cardboard_box',['csd:incomplete_cardboard_box','minecraft:gunpowder']),
+            C.deploying('csd:incomplete_cardboard_box',['csd:incomplete_cardboard_box','minecraft:flint'])
         ]
 
     )
-    .transitionalItem('kubejs:incomplete_cardboard_box')
+    .transitionalItem('csd:incomplete_cardboard_box')
     .loops(4)
-    .id('kubejs:creeper_deploying')
+    .id('csd:creeper_deploying')
 
     //猪灵
     C.sequenced_assembly(
@@ -52,14 +52,14 @@ ServerEvents.recipes(event =>{
         ],
         'create_biotech:empty_large_cardboard_box',
         [
-            C.deploying('kubejs:incomplete_cardboard_box',['kubejs:incomplete_cardboard_box','minecraft:porkchop']),
-            C.deploying('kubejs:incomplete_cardboard_box',['kubejs:incomplete_cardboard_box','minecraft:gilded_blackstone']),
-            C.deploying('kubejs:incomplete_cardboard_box',['kubejs:incomplete_cardboard_box','createsandustry:sand_soul'])
+            C.deploying('csd:incomplete_cardboard_box',['csd:incomplete_cardboard_box','minecraft:porkchop']),
+            C.deploying('csd:incomplete_cardboard_box',['csd:incomplete_cardboard_box','minecraft:gilded_blackstone']),
+            C.deploying('csd:incomplete_cardboard_box',['csd:incomplete_cardboard_box','createsandustry:sand_soul'])
         ]
     )
-    .transitionalItem('kubejs:incomplete_cardboard_box')
+    .transitionalItem('csd:incomplete_cardboard_box')
     .loops(4)
-    .id('kubejs:piglin_deploying')
+    .id('csd:piglin_deploying')
     //兔子
     C.sequenced_assembly(
         [
@@ -70,14 +70,14 @@ ServerEvents.recipes(event =>{
         ],
         'create_biotech:empty_large_cardboard_box',
         [
-            C.deploying('kubejs:incomplete_cardboard_box',['kubejs:incomplete_cardboard_box','minecraft:rabbit_hide']),
-            C.deploying('kubejs:incomplete_cardboard_box',['kubejs:incomplete_cardboard_box','minecraft:rabbit_foot']),
-            C.deploying('kubejs:incomplete_cardboard_box',['kubejs:incomplete_cardboard_box','minecraft:carrot'])
+            C.deploying('csd:incomplete_cardboard_box',['csd:incomplete_cardboard_box','minecraft:rabbit_hide']),
+            C.deploying('csd:incomplete_cardboard_box',['csd:incomplete_cardboard_box','minecraft:rabbit_foot']),
+            C.deploying('csd:incomplete_cardboard_box',['csd:incomplete_cardboard_box','minecraft:carrot'])
         ]
     )
-    .transitionalItem('kubejs:incomplete_cardboard_box')
+    .transitionalItem('csd:incomplete_cardboard_box')
     .loops(4)
-    .id('kubejs:rabbit_deploying')
+    .id('csd:rabbit_deploying')
     //骷髅
     C.sequenced_assembly(
         [
@@ -88,10 +88,10 @@ ServerEvents.recipes(event =>{
         ],
         'create_biotech:empty_large_cardboard_box',
         [
-            C.deploying('kubejs:incomplete_cardboard_box',['kubejs:incomplete_cardboard_box','minecraft:bone']),
+            C.deploying('csd:incomplete_cardboard_box',['csd:incomplete_cardboard_box','minecraft:bone']),
         ]
     )
-    .transitionalItem('kubejs:incomplete_cardboard_box')
+    .transitionalItem('csd:incomplete_cardboard_box')
     .loops(12)
-    .id('kubejs:skeleton_deploying')
+    .id('csd:skeleton_deploying')
 })

@@ -1,7 +1,0 @@
-{
-    "item.kubejs.golden_maggot": "Golden Maggot",
-    "trait.kubejs.golden_maggot_production": "Golden Maggot Production",
-    "trait.kubejs.golden_maggot_production.description": "Retain both a fly's body and a piglin's head to automatically produce %3$s Golden Maggot(s) after a random delay of %1$s to %2$s seconds each cycle.",
-    "part.kubejs.golden_maggot.fly_body": "Fly Body",
-    "part.kubejs.golden_maggot.piglin_head": "Piglin Head"
-}

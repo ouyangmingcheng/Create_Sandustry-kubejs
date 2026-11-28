@@ -9,10 +9,10 @@ StartupEvents.postInit(() => {
     )
 
     // 熔融金汤底
-    const moltenGoldBucket = Item.of('kubejs:molten_gold_bucket').item
+    const moltenGoldBucket = Item.of('csd:molten_gold_bucket').item
 
     SoupBaseManager.registerFluidSoupBase(
-        ResourceLocation.parse('kubejs:molten_gold_soup_base'),
+        ResourceLocation.parse('csd:molten_gold_soup_base'),
         moltenGoldBucket,
         -20480
     )
@@ -30,10 +30,10 @@ StartupEvents.postInit(() => {
 
     // 流沙汤底
     const quicksandBucket = Item.of('quicksand:quicksand_bucket').item
-    const quicksandFluid = Fluid.getType(ResourceLocation.parse('kubejs:quicksand'))
+    const quicksandFluid = Fluid.getType(ResourceLocation.parse('csd:quicksand'))
 
     SoupBaseManager.registerFluidSoupBase(
-        ResourceLocation.parse('kubejs:quicksand_soup_base'),
+        ResourceLocation.parse('csd:quicksand_soup_base'),
         quicksandBucket,
         quicksandFluid,
         -2437213 

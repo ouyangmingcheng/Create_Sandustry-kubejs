@@ -31,7 +31,7 @@ ServerEvents.recipes(event =>{
             '#minecraft:coals'
         ]
 
-    )
+    ).id('csd:kjs/torch')
     //石头磨碎石
     C.crushing(
        [ CreateItem.of('poopsky:spall',0.2),
@@ -53,7 +53,7 @@ ServerEvents.recipes(event =>{
             CreateItem.of('4x minecraft:iron_nugget',0.5)
         ],
         [
-            'kubejs:iron_sandpaper'    
+            'csd:iron_sandpaper'
         ],
         20,
         1
@@ -182,7 +182,7 @@ ServerEvents.recipes(event =>{
         results: [
             { id: 'poopsky:dragon_breath_chili' }
         ]
-    }).id('kubejs:dragon_breath_chili_infiltrating')
+    }).id('csd:dragon_breath_chili_infiltrating')
     event.remove({id: 'poopsky:sieve/cactus'})
     event.custom({
         type: 'laowu:infiltrating',
@@ -199,7 +199,7 @@ ServerEvents.recipes(event =>{
         results: [
             { id: 'poopsky:king_of_dragon_fruit' }
         ]
-    }).id('kubejs:king_of_dragon_fruit_infiltrating')
+    }).id('csd:king_of_dragon_fruit_infiltrating')
     //冰箱
     event.remove({id:'kaleidoscope_chinesefood:freezer'})
     S(
@@ -214,10 +214,10 @@ ServerEvents.recipes(event =>{
             B: '#c:chests',
             C: 'createcraftedbeginning:breeze_cooler'
         }
-    )
+    ).id('csd:kjs/kaleidoscope_chinesefood_freezer')
     //熬猪油
     K.stockpot(
-        'kubejs:lard',
+        'csd:lard',
         [
             'minecraft:porkchop',
             'minecraft:porkchop',
@@ -241,10 +241,10 @@ ServerEvents.recipes(event =>{
     // 猪油 -> 32 油，返还花盆
     event.shapeless(
         '32x kaleidoscope_cookery:oil',
-        ['kubejs:lard']
+        ['csd:lard']
     )
-        .replaceIngredient({ item: 'kubejs:lard' }, 'minecraft:flower_pot')
-        .id('kubejs:lard_to_oil')
+        .replaceIngredient({ item: 'csd:lard' }, 'minecraft:flower_pot')
+        .id('csd:lard_to_oil')
 
     //方解石
     event.custom({
@@ -289,7 +289,7 @@ ServerEvents.recipes(event =>{
             B: 'create:andesite_casing',
             C: 'minecraft:iron_ingot'
         }
-    )
+    ).id('csd:kjs/vintageimprovements_curving_press')
     //动力冲压机
     S(
         'create:mechanical_press',
@@ -302,7 +302,7 @@ ServerEvents.recipes(event =>{
             A: 'vintageimprovements:curving_press',
             B: 'minecraft:iron_ingot',
         }
-    )
+    ).id('csd:kjs/create_mechanical_press')
     //木棍->木板
     S(
         'minecraft:oak_planks',
@@ -314,7 +314,7 @@ ServerEvents.recipes(event =>{
         {
             A: 'minecraft:stick'
         }
-    )
+    ).id('csd:kjs/oak_planks')
 
     //闪电磨烈焰粉
     C.crushing(
@@ -324,10 +324,10 @@ ServerEvents.recipes(event =>{
         ],
         'touhou_little_maid:entity_placeholder[touhou_little_maid:recipe_id="spawn_lightning_bolt"]'
     )
-    .id('kubejs:blaze_powder_from_lightning_bolt')
+    .id('csd:blaze_powder_from_lightning_bolt')
     //粑粑肉制作
     D.compression_molding(
-        'kubejs:bar_of_baba_meat',
+        'csd:bar_of_baba_meat',
         'createdieselgenerators:bar',
         [
             '#c:foods/raw_pork',
@@ -335,39 +335,39 @@ ServerEvents.recipes(event =>{
             '#c:eggs'
         ]
     )
-    .id('kubejs:bar_of_baba_meat')
+    .id('csd:bar_of_baba_meat')
     K.steamer(
-        '2x kubejs:baba_meat_slice',
-        'kubejs:bar_of_baba_meat'
+        '2x csd:baba_meat_slice',
+        'csd:bar_of_baba_meat'
     )
-    .id('kubejs:baba_meat_slice')
+    .id('csd:baba_meat_slice')
     K.flex_stockpot(
-        'kubejs:xiang_wan',
+        'csd:xiang_wan',
         [
             'horrrs_pvz:pea_seedling',
-            'kubejs:baba_meat_slice'
+            'csd:baba_meat_slice'
         ],
         'water'
     )
-    .id('kubejs:flex_xiang_wan')
+    .id('csd:flex_xiang_wan')
     K.stockpot(
-        'kubejs:xiang_wan',
+        'csd:xiang_wan',
         [
             'horrrs_pvz:pea_seedling',
             'horrrs_pvz:pea_seedling',
             'horrrs_pvz:pea_seedling',
-            'kubejs:baba_meat_slice',
-            'kubejs:baba_meat_slice',
+            'csd:baba_meat_slice',
+            'csd:baba_meat_slice',
         ],
         'water'
     )
-    .id('kubejs:xiang_wan')
+    .id('csd:xiang_wan')
     //充能紫水晶
     //珍珠->末影珍珠
     C.mixing(
         CreateItem.of('minecraft:ender_pearl',0.5),
         [
-            'kubejs:pearl',
+            'csd:pearl',
             Fluid.of('create_biotech:teleportation',1000)
         ]
     ).heatRequirement('heated')

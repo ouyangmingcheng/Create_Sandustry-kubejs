@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "age=0": { "model": "csd:block/thunder_grass/0" },
+    "age=1": { "model": "csd:block/thunder_grass/1" },
+    "age=2": { "model": "csd:block/thunder_grass/2" },
+    "age=3": { "model": "csd:block/thunder_grass/3" },
+    "age=4": { "model": "csd:block/thunder_grass/4" },
+    "age=5": { "model": "csd:block/thunder_grass/5" }
+  }
+}

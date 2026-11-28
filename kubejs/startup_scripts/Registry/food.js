@@ -24,7 +24,7 @@ StartupEvents.registry('item', event => {
         .build()
 
     event.createCustom(
-        'sea_sand_noodles',
+        'csd:sea_sand_noodles',
         () => new $FoodWithEffectsItem(seaSandNoodlesFood)
     )
 
@@ -42,7 +42,7 @@ StartupEvents.registry('item', event => {
         .build()
 
     event.createCustom(
-        'chang',
+        'csd:chang',
         () => new $FoodWithEffectsItem(changFood)
     )
 
@@ -56,7 +56,7 @@ StartupEvents.registry('item', event => {
         .build()
 
     event.createCustom(
-        'golden_soup_beef', 
+        'csd:golden_soup_beef',
         () =>new $FoodWithEffectsItem(goldenSoupBeefFood)
     )
 
@@ -70,7 +70,7 @@ StartupEvents.registry('item', event => {
         .build()
 
     event.createCustom(
-        'sand_baozi',
+        'csd:sand_baozi',
         () =>new $FoodWithEffectsItem(sandbaoziFood)
     )
     //猪油
@@ -84,7 +84,7 @@ StartupEvents.registry('item', event => {
         .build()
 
     event.createCustom(
-        'lard',
+        'csd:lard',
         () =>new $FoodWithEffectsItem(lardFood)
     )
     //香碗
@@ -97,7 +97,7 @@ StartupEvents.registry('item', event => {
         .build()
 
     event.createCustom(
-        'xiang_wan',
+        'csd:xiang_wan',
         () =>new $FoodWithEffectsItem(xiangwanFood)
     )
     //粑粑肉
@@ -107,7 +107,7 @@ StartupEvents.registry('item', event => {
         .build()
 
     event.createCustom(
-        'baba_meat_slice',
+        'csd:baba_meat_slice',
         () =>new $FoodWithEffectsItem(babameatFood)
     )
 })

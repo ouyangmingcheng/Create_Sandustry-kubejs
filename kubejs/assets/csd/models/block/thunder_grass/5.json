@@ -1,0 +1,6 @@
+{
+  "parent": "csd:block/thunder_grass_cross",
+  "textures": {
+    "cross": "csd:block/thunder_grass5"
+  }
+}

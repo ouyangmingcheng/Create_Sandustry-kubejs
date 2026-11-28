@@ -2,5 +2,5 @@
 LootJS.lootTables(event => {
     event.getLootTable('minecraft:gameplay/fishing/treasure')
         .firstPool()
-        .addEntry(LootEntry.of('kubejs:pearl').withWeight(1).setCount(1))
+        .addEntry(LootEntry.of('csd:pearl').withWeight(1).setCount(1))
 })

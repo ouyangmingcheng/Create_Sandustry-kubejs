@@ -16,7 +16,7 @@ ServerEvents.recipes(event =>{
     )
     //九转大肠
     K.pot(
-        'kubejs:chang',
+        'csd:chang',
         [
             'poopsky:poop',
             'poopsky:poop',
@@ -29,7 +29,7 @@ ServerEvents.recipes(event =>{
 
     )
         K.flex_pot(
-        'kubejs:chang',
+        'csd:chang',
         [
             'poopsky:poop',
             'minecraft:porkchop'
@@ -71,9 +71,9 @@ ServerEvents.recipes(event =>{
         {
             A: 'minecraft:quartz_slab',
             B: 'minecraft:quartz_block',
-            C: 'kubejs:poop_hydraulic_engine'
+            C: 'csd:poop_hydraulic_engine'
         }
-    )
+    ).id('csd:kjs/poopsky_flush_toilet')
     S(
         'poopsky:golden_flush_toilet',
         [
@@ -83,9 +83,9 @@ ServerEvents.recipes(event =>{
         {
             A: 'supplementaries:gold_trapdoor',
             B: 'minecraft:gold_block',
-            C: 'kubejs:ominous_mechanism'
+            C: 'csd:ominous_mechanism'
         }
-    )
+    ).id('csd:kjs/poopsky_golden_flush_toilet')
     //马桶车
     event.remove({id:'poopsky:flush_toilet_cart'})
     event.remove({id:'poopsky:golden_flush_toilet_cart'})
@@ -98,7 +98,7 @@ ServerEvents.recipes(event =>{
             C: 'poopsky:flush_toilet',
             B: 'offroad:small_tire'
         }
-    )
+    ).id('csd:kjs/poopsky_flush_toilet_cart')
     S(
         'poopsky:golden_flush_toilet_cart',
         [
@@ -108,16 +108,16 @@ ServerEvents.recipes(event =>{
             C: 'poopsky:golden_flush_toilet',
             B: 'offroad:small_tire'
         }
-    )
+    ).id('csd:kjs/poopsky_golden_flush_toilet_cart')
     //天使方块<->天屎方块
     Sl(
         'angelus:angel_block',
         'poopsky:poopsky_block'
-    )
+    ).id('csd:kjs/angelus_angel_block')
     Sl(
         'poopsky:poopsky_block',
         'angelus:angel_block'
-    )
+    ).id('csd:kjs/poopsky_poopsky_block')
     //代币
     event.remove({id:'poopsky:token'})
     C.sequenced_assembly(
@@ -128,15 +128,15 @@ ServerEvents.recipes(event =>{
         'minecraft:nautilus_shell',
         [ 
            
-            C.deploying('kubejs:incomplete_token',['kubejs:incomplete_token','poopsky:roundworm']),
-            C.deploying('kubejs:incomplete_token',['kubejs:incomplete_token','jackseconomy:dollar_bill']),
-            C.deploying('kubejs:incomplete_token',['kubejs:incomplete_token','minecraft:emerald']),
+            C.deploying('csd:incomplete_token',['csd:incomplete_token','poopsky:roundworm']),
+            C.deploying('csd:incomplete_token',['csd:incomplete_token','jackseconomy:dollar_bill']),
+            C.deploying('csd:incomplete_token',['csd:incomplete_token','minecraft:emerald']),
         ]
               
     )
-    .transitionalItem('kubejs:incomplete_token')
+    .transitionalItem('csd:incomplete_token')
     .loops(4)
-    .id('kubejs:token')
+    .id('csd:token')
     //温床的诅咒
     event.remove({id:'poopsky:seedbed_curse'})
     const $PotionFluidHandler = Java.loadClass(
@@ -162,7 +162,7 @@ ServerEvents.recipes(event =>{
     //粪便铸造
     D.casting(
         'poopsky:poop',
-        'kubejs:poop',
+        'csd:poop',
         Fluid.of('poopsky:urine',888)
     )
     .heatRequirement('heated')
@@ -181,21 +181,21 @@ ServerEvents.recipes(event =>{
         ],
         'poopsky:hard_toilet[poopsky:toilet_type="white_concrete"]',
         [
-            C.deploying('kubejs:incomplete_rainbow_toilet',['kubejs:incomplete_rainbow_toilet','poopsky:fly[poopsky:fly_type="red"]']),
-            C.deploying('kubejs:incomplete_rainbow_toilet',['kubejs:incomplete_rainbow_toilet','poopsky:fly[poopsky:fly_type="orange"]']),
-            C.deploying('kubejs:incomplete_rainbow_toilet',['kubejs:incomplete_rainbow_toilet','poopsky:fly[poopsky:fly_type="yellow"]']),
-            C.deploying('kubejs:incomplete_rainbow_toilet',['kubejs:incomplete_rainbow_toilet','poopsky:fly[poopsky:fly_type="green"]']),
-            C.deploying('kubejs:incomplete_rainbow_toilet',['kubejs:incomplete_rainbow_toilet','poopsky:fly[poopsky:fly_type="cyan"]']),
-            C.deploying('kubejs:incomplete_rainbow_toilet',['kubejs:incomplete_rainbow_toilet','poopsky:fly[poopsky:fly_type="blue"]']),
-            C.deploying('kubejs:incomplete_rainbow_toilet',['kubejs:incomplete_rainbow_toilet','poopsky:fly[poopsky:fly_type="purple"]'])
+            C.deploying('csd:incomplete_rainbow_toilet',['csd:incomplete_rainbow_toilet','poopsky:fly[poopsky:fly_type="red"]']),
+            C.deploying('csd:incomplete_rainbow_toilet',['csd:incomplete_rainbow_toilet','poopsky:fly[poopsky:fly_type="orange"]']),
+            C.deploying('csd:incomplete_rainbow_toilet',['csd:incomplete_rainbow_toilet','poopsky:fly[poopsky:fly_type="yellow"]']),
+            C.deploying('csd:incomplete_rainbow_toilet',['csd:incomplete_rainbow_toilet','poopsky:fly[poopsky:fly_type="green"]']),
+            C.deploying('csd:incomplete_rainbow_toilet',['csd:incomplete_rainbow_toilet','poopsky:fly[poopsky:fly_type="cyan"]']),
+            C.deploying('csd:incomplete_rainbow_toilet',['csd:incomplete_rainbow_toilet','poopsky:fly[poopsky:fly_type="blue"]']),
+            C.deploying('csd:incomplete_rainbow_toilet',['csd:incomplete_rainbow_toilet','poopsky:fly[poopsky:fly_type="purple"]'])
         ]
     )
     .loops(1)
-    .transitionalItem('kubejs:incomplete_rainbow_toilet')
-    .id('kubejs:rainbow_toilet')
+    .transitionalItem('csd:incomplete_rainbow_toilet')
+    .id('csd:rainbow_toilet')
     //粪便锭
     S(
-        'kubejs:poop_ingot',
+        'csd:poop_ingot',
         [
             'AAA',
             'ABB',
@@ -205,17 +205,17 @@ ServerEvents.recipes(event =>{
             A: 'poopsky:poop',
             B: 'minecraft:copper_ingot'
         }
-    )
+    ).id('csd:kjs/csd_poop_ingot')
     //水力引擎->粪力引擎
     Sl(
-        'kubejs:poop_hydraulic_engine',
+        'csd:poop_hydraulic_engine',
         [
             'create_sa:hydraulic_engine',
-            'kubejs:poop_ingot',
-            'kubejs:poop_ingot',
-            'kubejs:poop_ingot'
+            'csd:poop_ingot',
+            'csd:poop_ingot',
+            'csd:poop_ingot'
         ]
-    )
+    ).id('csd:kjs/csd_poop_hydraulic_engine')
     //繁育箱
     event.remove({id:'poopsky:breeding_chest'})
     S(
@@ -227,10 +227,10 @@ ServerEvents.recipes(event =>{
         ],
         {
             A: 'poopsky:cut_poop_block',
-            B: 'kubejs:poop_hydraulic_engine',
+            B: 'csd:poop_hydraulic_engine',
             C: 'minecraft:barrel'
         }
-    )
+    ).id('csd:kjs/poopsky_breeding_chest')
     //苍蝇桶
     event.remove({id:'poopsky:fly_barrel'})
     C.mechanical_crafting(
@@ -245,7 +245,7 @@ ServerEvents.recipes(event =>{
         {
             A: 'poopsky:maggots_block',
             B: 'poopsky:poop_block',
-            C: 'kubejs:poop_hydraulic_engine',
+            C: 'csd:poop_hydraulic_engine',
             D: 'minecraft:barrel'
         }
     )

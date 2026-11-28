@@ -6,12 +6,12 @@ const GOLDEN_MAGGOT_MAX_INTERVAL_TICKS = 11999
 const GOLDEN_MAGGOT_COUNT = 1
 
 BionicTraitEvents.definitions(event => {
-    event.register('kubejs:golden_maggot_production', {
+    event.register('csd:golden_maggot_production', {
         schema_version: 1,
         display: {
-            name: { translate: 'trait.kubejs.golden_maggot_production' },
+            name: { translate: 'trait.csd.golden_maggot_production' },
             description: {
-                translate: 'trait.kubejs.golden_maggot_production.description',
+                translate: 'trait.csd.golden_maggot_production.description',
                 with: [
                     String(GOLDEN_MAGGOT_MIN_INTERVAL_TICKS / 20),
                     String(GOLDEN_MAGGOT_MAX_INTERVAL_TICKS / 20),
@@ -31,12 +31,12 @@ BionicTraitEvents.definitions(event => {
         carrier: { roles: ['#fly_body', '#piglin_head'] },
         parts: {
             fly_body: {
-                name: { translate: 'part.kubejs.golden_maggot.fly_body' },
+                name: { translate: 'part.csd.golden_maggot.fly_body' },
                 include_children: false,
                 bindings: { 'poopsky:fly': ['body'] }
             },
             piglin_head: {
-                name: { translate: 'part.kubejs.golden_maggot.piglin_head' },
+                name: { translate: 'part.csd.golden_maggot.piglin_head' },
                 include_children: false,
                 bindings: { 'minecraft:piglin': ['head'] }
             }
@@ -49,8 +49,8 @@ BionicTraitEvents.definitions(event => {
             },
             production: [{
                 // 新的计时 ID 使已有组合不再沿用旧的 1200 刻倒计时。
-                id: 'kubejs:golden_maggot_production_random',
-                item: 'kubejs:golden_maggot',
+                id: 'csd:golden_maggot_production_random',
+                item: 'csd:golden_maggot',
                 min: GOLDEN_MAGGOT_COUNT,
                 max: GOLDEN_MAGGOT_COUNT,
                 min_interval_ticks: GOLDEN_MAGGOT_MIN_INTERVAL_TICKS,

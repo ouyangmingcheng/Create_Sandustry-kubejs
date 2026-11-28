@@ -14,28 +14,28 @@ ServerEvents.recipes(event => {
         [
             'createdieselgenerators:mold[createdieselgenerators:mold_type="createdieselgenerators:chain"]'
         ],
-        ['kubejs:mold'],
+        ['csd:mold'],
         100
     )
     V.turning(
         [
             'createdieselgenerators:mold[createdieselgenerators:mold_type="createdieselgenerators:bowl"]'
         ],
-        ['kubejs:mold'],
+        ['csd:mold'],
         100
     )
     V.turning(
         [
             'createdieselgenerators:mold[createdieselgenerators:mold_type="createdieselgenerators:lines"]'
         ],
-        ['kubejs:mold'],
+        ['csd:mold'],
         100
     )
     V.turning(
         [
             'createdieselgenerators:mold[createdieselgenerators:mold_type="createdieselgenerators:bar"]'
         ],
-        ['kubejs:mold'],
+        ['csd:mold'],
         100
     )
 
@@ -43,16 +43,16 @@ ServerEvents.recipes(event => {
     D.casting(
         'minecraft:gold_ingot',
         'createdieselgenerators:bar',
-        Fluid.of('kubejs:molten_gold', 125)
+        Fluid.of('csd:molten_gold', 125)
     )
     V.curving(
-            'createdieselgenerators:mold[createdieselgenerators:mold_type="kubejs:poop"]',
-            ['kubejs:mold'],
+            'createdieselgenerators:mold[createdieselgenerators:mold_type="csd:poop"]',
+            ['csd:mold'],
             100
         )
         .mode(5)
         .itemAsHead('poopsky:golden_poop')
         .headDamage(0)
-        .id('kubejs:curving/golden_poop')
+        .id('csd:curving/golden_poop')
     
 })

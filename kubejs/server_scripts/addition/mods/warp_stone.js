@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
     const create = event.recipes.create
-    const incomplete = 'kubejs:incomplete_warp_stone'
+    const incomplete = 'csd:incomplete_warp_stone'
     event.remove({id:'waystones:warp_stone'})
 
     create.sequenced_assembly(['waystones:warp_stone'],

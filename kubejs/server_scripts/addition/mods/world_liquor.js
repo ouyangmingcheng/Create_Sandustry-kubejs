@@ -47,4 +47,19 @@ ServerEvents.recipes(event => {
             'kaleidoscope_world_liquor:kwas_chlebowy'
         ]
     ).id('kaleidoscope_world_liquor:shaker/long_island_iced_tea')
+    //魔法脆角：最下排中间改为猫面团
+    event.remove({id:'kaleidoscope_world_liquor:magic_crispy_corner'})
+    event.shaped(
+        'kaleidoscope_twilight:magic_crispy_corner',
+        [
+            'III',
+            'ILI',
+            'IDI'
+        ],
+        {
+            I: 'minecraft:gold_nugget',
+            L: 'minecraft:cookie',
+            D: 'laowu:cat_dough'
+        }
+    ).id('kaleidoscope_world_liquor:magic_crispy_corner')
 })

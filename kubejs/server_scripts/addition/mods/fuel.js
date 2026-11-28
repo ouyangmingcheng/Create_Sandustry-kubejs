@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
         ],
         results: [],
         superheated: true
-    }).id('kubejs:liquid_burning/premium_chili_oil_superheated')
+    }).id('csd:liquid_burning/premium_chili_oil_superheated')
 
     //生物乙醇
     event.remove({id:'createaddition:mixing/bioethanol'})

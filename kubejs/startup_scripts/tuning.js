@@ -90,14 +90,14 @@ ItemEvents.modification(event => {
     item.setAttackDamage(2)
   })
   //砂纸耐久
-  event.modify('kubejs:iron_sandpaper', item => {
+  event.modify('csd:iron_sandpaper', item => {
     item.maxDamage = 128
   })
-  event.modify('kubejs:golden_sandpaper', item => {
+  event.modify('csd:golden_sandpaper', item => {
     item.maxDamage = 1
   })
   //黄金锅铲耐久
-  event.modify('kubejs:golden_kitchen_shovel', item => {
+  event.modify('csd:golden_kitchen_shovel', item => {
     item.maxDamage = 128
   })
 })

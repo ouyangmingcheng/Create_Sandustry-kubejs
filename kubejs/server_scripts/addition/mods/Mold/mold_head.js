@@ -170,29 +170,29 @@ ServerEvents.recipes(event => {
 
     // Blank mold
     C.cutting(
-        'kubejs:mold',
+        'csd:mold',
         'vintageimprovements:cast_iron_sheet'
-    ).id('kubejs:cutting/blank_mold')
+    ).id('csd:cutting/blank_mold')
 
     // Create all curving molds, including the trapdoor mold.
     PRESS_CURVING_HEADS.forEach(entry => {
-        const moldId = 'kubejs:' + entry.mold
+        const moldId = 'csd:' + entry.mold
         const moldItem = 'createdieselgenerators:mold[createdieselgenerators:mold_type="' + moldId + '"]'
 
         V.curving(
             [moldItem],
-            ['kubejs:mold'],
+            ['csd:mold'],
             100
         )
         .mode(5)
         .itemAsHead(entry.head)
         .headDamage(0)
-        .id('kubejs:curving/' + entry.mold + '_mold')
+        .id('csd:curving/' + entry.mold + '_mold')
     })
 
     // Sword, pickaxe and axe compression recipes.
     PRESS_TOOL_MOLDS.forEach(tool => {
-        const moldId = 'kubejs:' + tool.mold
+        const moldId = 'csd:' + tool.mold
 
         PRESS_TOOL_MATERIALS.forEach(material => {
             if (material.tools && material.tools.indexOf(tool.mold) === -1) {
@@ -214,7 +214,7 @@ ServerEvents.recipes(event => {
                 [outputId],
                 moldId,
                 ingredients
-            ).id('kubejs:compression_molding/' + materialId + '_' + tool.mold)
+            ).id('csd:compression_molding/' + materialId + '_' + tool.mold)
         })
     })
 
@@ -226,8 +226,8 @@ ServerEvents.recipes(event => {
 
         D.compression_molding(
             [entry.output],
-            'kubejs:trapdoor',
+            'csd:trapdoor',
             [entry.ingredient]
-        ).id('kubejs:compression_molding/trapdoor/' + recipeKey)
+        ).id('csd:compression_molding/trapdoor/' + recipeKey)
     })
 })

@@ -1,15 +1,15 @@
 //机械动力风Tooltip
 
 CreateTooltipEvents.register(event => {
-    event.add('kubejs:iron_sandpaper', 'STANDARD_CREATE')
+    event.add('csd:iron_sandpaper', 'STANDARD_CREATE')
     event.addWithKey(
-        'kubejs:plant_downgrade_smithing_template',
+        'csd:plant_downgrade_smithing_template',
         'STANDARD_CREATE',
-        'item.kubejs.plant_downgrade_smithing_template'
+        'item.csd.plant_downgrade_smithing_template'
     )
     event.addWithKey(
-        'kubejs:plant_upgrade_smithing_template',
+        'csd:plant_upgrade_smithing_template',
         'STANDARD_CREATE',
-        'item.kubejs.plant_upgrade_smithing_template'
+        'item.csd.plant_upgrade_smithing_template'
     )
 })

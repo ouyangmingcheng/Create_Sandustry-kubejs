@@ -21,7 +21,7 @@ ServerEvents.recipes(event =>{
     [
         '4x createsandustry:sand_ball'
     ]
-   )
+   ).id('csd:kjs/sand')
     
     event.remove({output:'create:sand_paper'})
     event.remove({output:'minecraft:sandstone'})
@@ -34,7 +34,7 @@ ServerEvents.recipes(event =>{
             'minecraft:sand',
             'minecraft:sand'
         ]
-    )
+    ).id('csd:kjs/createsandustry_hardened_sand')
     //砂纸
     Sl(
         'create:sand_paper[damage=7]',
@@ -42,15 +42,15 @@ ServerEvents.recipes(event =>{
             'createsandustry:hardened_sand',
             'createsandustry:hardened_sand'
         ]
-    )
+    ).id('csd:kjs/create_sand_paper')
     //铁砂纸
     Sl(
-        'kubejs:iron_sandpaper',
+        'csd:iron_sandpaper',
         [
             'create:sand_paper',
             'create:iron_sheet'
         ]
-    )
+    ).id('csd:kjs/csd_iron_sandpaper')
     //砂纸->纸
     C.splashing(
         [
@@ -93,7 +93,7 @@ ServerEvents.recipes(event =>{
             'minecraft:sand',
             'minecraft:sand'
         ]
-    )
+    ).id('csd:kjs/sandstone')
     //砂纸磨砂纸
     C.sandpaper_polishing(
         
@@ -145,33 +145,33 @@ ServerEvents.recipes(event =>{
     )
     //海沙子面
     K.stockpot(
-        'kubejs:sea_sand_noodles',
+        'csd:sea_sand_noodles',
         [
             'kaleidoscope_cookery:raw_noodles',
             'kaleidoscope_cookery:raw_noodles',
             '#c:eggs',
             'kaleidoscope_cookery:lettuce'
         ],
-        'kubejs:quicksand_soup_base'
+        'csd:quicksand_soup_base'
     )
     K.flex_stockpot(
-                'kubejs:sea_sand_noodles',
+                'csd:sea_sand_noodles',
         [
             'kaleidoscope_cookery:raw_noodles',
             '#c:eggs',
             'kaleidoscope_cookery:lettuce'
         ],
-        'kubejs:quicksand_soup_base'
+        'csd:quicksand_soup_base'
     )
     //流沙
 
     C.filling(
         'quicksand:quicksand_bucket',
-        ['minecraft:bucket', Fluid.of('kubejs:quicksand', 1000)]
+        ['minecraft:bucket', Fluid.of('csd:quicksand', 1000)]
     )
 
     C.emptying(
-        [Fluid.of('kubejs:quicksand', 1000), 'minecraft:bucket'],
+        [Fluid.of('csd:quicksand', 1000), 'minecraft:bucket'],
         'quicksand:quicksand_bucket'
     )
 
@@ -204,7 +204,7 @@ ServerEvents.recipes(event =>{
     )
     //沙包
     K.steamer(
-        'kubejs:sand_baozi',
+        'csd:sand_baozi',
         'createsandustry:sand_ball'
     )
     //石化沙子->安山岩
@@ -216,7 +216,7 @@ ServerEvents.recipes(event =>{
             'createsandustry:petrified_sand',
             'createsandustry:petrified_sand'
         ]
-    )
+    ).id('csd:kjs/andesite')
     //砂纸->砂带
     event.remove('vintageimprovements:craft/grinder_belt')
     S(
@@ -229,7 +229,7 @@ ServerEvents.recipes(event =>{
         {
             A: 'create:sand_paper[unbreakable={}]'
         }
-    )
+    ).id('csd:kjs/vintageimprovements_grinder_belt')
     //魔法脆角：最下排中间改为猫面团
     event.remove({id:'kaleidoscope_world_liquor:magic_crispy_corner'})
     event.shaped(

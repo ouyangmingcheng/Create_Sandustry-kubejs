@@ -28,20 +28,20 @@ ServerEvents.recipes(event =>{
             A: 'horrrs_pvz:sunshine_gem',
             B: 'minecraft:iron_ingot'
         }
-    )
+    ).id('csd:kjs/horrrs_pvz_sun_ingot')
     //双发豌豆射手->豌豆射手
     event.recipes.minecraft.smithing_transform(
         'horrrs_pvz:peashooter_card',
-        'kubejs:plant_downgrade_smithing_template',
+        'csd:plant_downgrade_smithing_template',
         'horrrs_pvz:double_pea_shooter_card',
-        'kubejs:poop_ingot'
+        'csd:poop_ingot'
     )
     //空白卡
     event.remove({id:'horrrs_pvz:plant_card_recipe'})
     event.recipes.minecraft.smithing_transform(
         'horrrs_pvz:plant_card',
-        'kubejs:plant_downgrade_smithing_template',
+        'csd:plant_downgrade_smithing_template',
         'horrrs_pvz:peashooter_card',
-        'kubejs:poop_ingot'
+        'csd:poop_ingot'
     )
 })

@@ -31,7 +31,7 @@ BlockEvents.rightClicked(event => {
 
         // 成功放入屎，发放隐藏进度
         player.runCommandSilent(
-            'advancement grant @s only kubejs:dirty_cutting_board'
+            'advancement grant @s only csd:dirty_cutting_board'
         )
     })
 })

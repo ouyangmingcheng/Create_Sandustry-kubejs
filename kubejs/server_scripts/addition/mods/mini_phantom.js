@@ -3,7 +3,7 @@ ServerEvents.recipes(event =>{
     event.remove({id:'createphantom:mini_phantom'})
 
     const create = event.recipes.create
-    const incomplete = 'kubejs:incomplete_mini_phantom'
+    const incomplete = 'csd:incomplete_mini_phantom'
 
     create.sequenced_assembly(['createphantom:mini_phantom'],
 
